@@ -292,6 +292,7 @@ ol, ul {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		display: none;
 	}
 
 		ul.icons li {
