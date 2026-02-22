@@ -86,10 +86,21 @@ ol, ul {
 		}
 
 	body {
-		background-color: #fff;
+		background-color: #000;
 		color: #aaa;
+		/* 确保内容填满整个屏幕 */
+		min-height: 100vh;
+		min-height: -webkit-fill-available; /* 针对iOS Safari */
 	}
-
+	.safe-area {
+		padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 	body, input, select, textarea {
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-weight: 400;
